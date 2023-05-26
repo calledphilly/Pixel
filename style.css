@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir.ttc');
+    /* Vous pouvez ajouter d'autres formats de police (e.g., woff, woff2) et leurs chemins correspondants ici */
+  }
+  
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Avenir;
+    font-family: 'Avenir';
     font-style: normal;
 }
 
@@ -18,19 +25,19 @@ main {
 h1 {
     font-size: 14.5em;
     font-weight: 900;
-    /*----------------*/
+    /*------------------------*/
     margin-bottom: 19%;
     margin-left: -1.2%;
 }
 h2 {
     font-size: 8em;
     font-weight: 800;
-    /*----------------*/
+    /*------------------------*/
     margin: 20% 0;
 }
 p {
     font-size: 4.77em;
-    /*----------------*/
+    /*------------------------*/
     font-weight: 400;
 }
 
