@@ -2,7 +2,7 @@
     font-family: 'Avenir';
     src: url('Avenir.ttc');
     /* Vous pouvez ajouter d'autres formats de police (e.g., woff, woff2) et leurs chemins correspondants ici */
-  }
+}
 
 * {
     margin: 0;
