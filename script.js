@@ -1,6 +1,7 @@
-window.addEventListener("scroll", function() {
-    var paragraphs = document.querySelectorAll(".scrolling-paragraph");
-    var viewportHeight = window.innerHeight/3;
+window.addEventListener("scroll", () => {
+    let paragraphs = document.querySelectorAll(".scrolling-paragraph");
+    let viewportHeight = window.innerHeight/3;
+
     /* "querySelectorAll()" selectionne plusieurs choses en même temps, à linverse de "querySelector()"
     qui n'en selectionne qu'un seul.
     Il est donc necessaire avant d'utiliser un evenement de les décomposer en plusieurs
@@ -8,8 +9,8 @@ window.addEventListener("scroll", function() {
     puis ensuite d'ajouter l'evenement a ce nouveau nom de variable.
     */
 
-    paragraphs.forEach(function(paragraph) {
-        var paragraphTop = paragraph.getBoundingClientRect().top;
+    paragraphs.forEach((paragraph) => {
+        let paragraphTop = paragraph.getBoundingClientRect().top;
         
         if (200 < paragraphTop && paragraphTop < viewportHeight) {
             paragraph.classList.add("highlight");
