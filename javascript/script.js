@@ -11,11 +11,11 @@ window.addEventListener("scroll", () => {
 
     paragraphs.forEach((paragraph) => {
         let paragraphTop = paragraph.getBoundingClientRect().top;
-        
+
         if (200 < paragraphTop && paragraphTop < viewportHeight) {
             paragraph.classList.add("highlight");
         } else {
-             paragraph.classList.remove("highlight");
+            paragraph.classList.remove("highlight");
         }
     });
 });
@@ -23,4 +23,4 @@ window.addEventListener("scroll", () => {
 new ScrollyVideo({
     scrollyVideoContainer: "scrolly-video",
     src: "video/Bionde Loi Fourier.mp4"
-  });
+});
