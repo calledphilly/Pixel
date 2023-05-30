@@ -64,7 +64,7 @@ p {
 }
 #blur-bas {
     position: fixed;
-    background-color: var( --dark);
+    background-color: var(--dark);
     filter: blur(20px);
     /*------------------------*/
     left: -10vw;
