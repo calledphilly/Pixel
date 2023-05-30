@@ -19,3 +19,8 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+new ScrollyVideo({
+    scrollyVideoContainer: "scrolly-video",
+    src: "video/Bionde Loi Fourier.mp4"
+  });

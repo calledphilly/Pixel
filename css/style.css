@@ -3,6 +3,9 @@
     src: url('font/Avenir.ttc') format('truetype');
     /* Vous pouvez ajouter d'autres formats de police (e.g., woff, woff2) et leurs chemins correspondants ici */
 }
+:root {
+    --Dark: #1E1E1E;
+}
 
 * {
     margin: 0;
