@@ -74,6 +74,10 @@ p {
     z-index: 1;
 }
 
+#scrolly-video {
+    width: 100%;
+}
+
 #progress-bar {
     position: fixed;
     bottom: 3.3%; left: 50%;

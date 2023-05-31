@@ -19,14 +19,14 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-
+//-------------------------------------------------
 new ScrollyVideo({
     scrollyVideoContainer: "scrolly-video",
     src: "video/Bionde Loi Fourier.mp4"
 });
 
 const $progressbar = document.querySelector("#progress-bar");
-
+//---------------------------------------------------
 $progressbar.style.transformOrigin = "0% 50%";
 $progressbar.animate(
 	{
