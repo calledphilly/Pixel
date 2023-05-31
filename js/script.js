@@ -24,3 +24,18 @@ new ScrollyVideo({
     scrollyVideoContainer: "scrolly-video",
     src: "video/Bionde Loi Fourier.mp4"
 });
+
+const $progressbar = document.querySelector('#progress');
+
+$progressbar.style.transformOrigin = '0% 50%';
+$progressbar.animate(
+	{
+		transform: ['scaleX(0)', 'scaleX(1)'],
+	},
+	{
+		fill: 'forwards',
+		timeline: new ScrollTimeline({
+			source: document.documentElement,
+		}),
+	}
+);
