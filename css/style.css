@@ -20,7 +20,7 @@ body {
     background-color: var(--dark);
 }
 main {
-    margin: -10 auto 0 auto;
+    margin: -10% auto 120% auto;
     padding: 0 3%;
     width: 90%;
     overflow: hidden;
