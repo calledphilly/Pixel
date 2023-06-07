@@ -36,13 +36,22 @@ window.addEventListener('scroll', () => {
 //---------------------------------------------------
 window.addEventListener("scroll", () => {
     //constante qui donne la taille du body
-    const heightBody = document.body.offsetHeight ;
-    //
-    let scrollValue = (window.scrollY + window.innerHeight) / heightBody;
-    console.log(scrollValue);
+    let heightBody = document.body.offsetHeight ;
+    
+    /* « window.scrollY » donne le niveau de la barre de scroll,
+    mais par le « Top », raispn pour laquelle on ajoute « window.innerHeght » pour obtenir le Bottom de la scroll bar  */
+    let bottomPointOfNavBar = window.scrollY + window.innerHeight ;
+    
+    /*variable qui donne le pourcentage de scroll (verticale) de la page.
+    On multiplie par 100 pour obtenir une valeyr semblable à des pourcentage, puis on tilise l'opérateur de troncature  « | » (pipe) : En appliquant l'opérateur de troncature « | 0 » à un nombre, la partie décimale est supprimée.  */
+    let scrollYPercentage = ( bottomPointOfNavBar / heightBody ) * 100 | 0;
+    
+    console.log(scrollYPercentage);
+    
     // Image
-    if (scrollValue > 0.45) {
-      imgImprovise.style.opacity = 1;
-      imgImprovise.style.transform = "none";
+    if (scrollYPercentage > 12) {
+        imgFourier.classList.add('active')
+    } else {
+        imgFourier.classList.remove('active')
     }
 })

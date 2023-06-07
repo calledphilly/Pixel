@@ -159,12 +159,17 @@ p {
     text-shadow: var(--firstColor) 0 0 8px;
 }
 
-.imgHide {
-    transform: translateX(0) !important;
+.img {
+    transform: translateX(-110%);
+    transition: .9s;
+}
+
+.img.active {
+    transform: translateX(0);
+    transition: .9s;
 }
 
 #imgFourier {
     width: 100%;
-    transform: translateX(-110%);
-    transition: .6s;
 }
+
