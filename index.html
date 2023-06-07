@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- ---------------------------------- -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js" defer></script>
     <script src="js/script.js" defer></script>
     <!-- ---------------------------------- -->
     <title>La Biographie du Pixel</title>
@@ -573,6 +572,7 @@
             double tous les 18 mois ».
         </p>
 
+        <!-- bloc de la vidéo -->
         <div id="scrolly-video"></div>
         
         <p class="scrolling-paragraph">
@@ -728,5 +728,14 @@
             Nous désignons chaque instant échantillonné comme une image, et chaque image est composée de pixels.
         </p>
     </main>
+
+    <!-- script de la vidéo -->
+<script src="https://cdn.jsdelivr.net/npm/scrolly-video@latest/dist/scrolly-video.js"></script>
+<script type="text/javascript">
+  new ScrollyVideo({
+    scrollyVideoContainer: "scrolly-video",
+    src: "video/Bionde Loi Fourier.mp4",
+  });
+</script>
 </body>
 </html>

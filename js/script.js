@@ -20,13 +20,8 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-//-------------------------------------------------
-new ScrollyVideo({
-    scrollyVideoContainer: "scrolly-video",
-    src: "video/Bionde Loi Fourier.mp4"
-});
 //---------------------------------------------------
-// rogressBar
+// progressBar
 window.addEventListener('scroll', () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
