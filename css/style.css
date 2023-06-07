@@ -105,3 +105,13 @@ p {
     transform: translateX(-1.5%);
     text-shadow: var(--color-text-highlight) 0 0 8px;
 }
+
+.imgHide {
+    transform: translateX(0) !important;
+}
+
+#imgFourier {
+    width: 100%;
+    transform: translateX(-110%);
+    transition: .6s;
+}

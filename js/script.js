@@ -39,3 +39,16 @@ $progressBar.animate(
 		}),
 	}
 );
+//---------------------------------------------------
+window.addEventListener("scroll", () => {
+    //taille du body
+    const heightBody = document.body.offsetHeight ;
+    //
+    let scrollValue = (window.scrollY + window.innerHeight) / heightBody;
+    console.log(scrollValue);
+    // Image
+    if (scrollValue > 0.45) {
+      imgImprovise.style.opacity = 1;
+      imgImprovise.style.transform = "none";
+    }
+})
