@@ -1,3 +1,4 @@
+// code du hightligh de texte
 window.addEventListener("scroll", () => {
     let paragraphs = document.querySelectorAll(".scrolling-paragraph");
     let viewportHeight = window.innerHeight/3;
@@ -25,20 +26,13 @@ new ScrollyVideo({
     src: "video/Bionde Loi Fourier.mp4"
 });
 //---------------------------------------------------
-const $progressBar = document.querySelector("#progress-bar");
-
-$progressBar.style.transformOrigin = "0% 50%";
-$progressBar.animate(
-	{
-		transform: ["scaleX(0)", "scaleX(1)"],
-	},
-	{
-		fill: 'forwards',
-		timeline: new ScrollTimeline({
-			source: document.documentElement,
-		}),
-	}
-);
+// code de la progressBar
+window.addEventListener('scroll', () => {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    progressBar.style.width = scrolled + "%";
+})
 //---------------------------------------------------
 window.addEventListener("scroll", () => {
     //taille du body
