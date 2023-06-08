@@ -47,6 +47,10 @@ h2 {
     /*------------------------*/
     margin: 20% 0;
 }
+.h2 {
+    font-size: .75em;
+    font-weight: 900;
+}
 p {
     font-size: 4.5em;
     font-weight: 400;
