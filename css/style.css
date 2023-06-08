@@ -24,7 +24,7 @@ body {
 }
 main {
     margin: -10% auto 120% auto;
-    padding: 0 3%;
+    padding: 0 10%;
     width: 85%;
     overflow: hidden;
 }
@@ -71,6 +71,50 @@ p {
     opacity: 1;
     transform: translateX(-2%);
     text-shadow: var(--firstColor) 0 0 14px;
+}
+
+
+
+#container-logo {
+    position: sticky;
+    top: 33vh;
+    width: 100vw; height: 85vh;
+}
+#content-textBio {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-fluid {
+    position: absolute;
+    top: 13vh; left: 50vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-cone {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-lettres {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-textByAlvain {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-icosphere {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -148,7 +192,7 @@ p {
     bottom: 3.3%; left: 50%;
     width: 92%;
     z-index: 1;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
 }
 .progress-bar-container {
     width: 100%; height: 1vh;

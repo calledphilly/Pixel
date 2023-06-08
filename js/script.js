@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
     /* console.log(scrollYPercentage); */
     
     // affichage image
-    if (scrollYPercentage > 12) {
+    if (scrollYPercentage > 13) {
         imgFourier.classList.add('active')
     } else {
         imgFourier.classList.remove('active')
