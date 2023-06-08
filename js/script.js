@@ -41,12 +41,18 @@ window.addEventListener("scroll", () => {
     On multiplie par 100 pour obtenir une valeyr semblable à des pourcentage, puis on tilise l'opérateur de troncature  « | » (pipe) : En appliquant l'opérateur de troncature « | 0 » à un nombre, la partie décimale est supprimée.  */
     let scrollYPercentage = ( bottomPointOfNavBar / heightBody ) * 100 | 0;
     
-    /* console.log(scrollYPercentage); */
+    console.log(scrollYPercentage);
     
     // affichage image
-    if (scrollYPercentage > 13) {
+    if (scrollYPercentage > 15) {
         imgFourier.classList.add('active')
     } else {
         imgFourier.classList.remove('active')
+    }
+
+    if (scrollYPercentage > 28) {
+        imgKotelnikov.classList.add('active')
+    } else {
+        imgKotelnikov.classList.remove('active')
     }
 })

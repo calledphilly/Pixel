@@ -74,11 +74,11 @@ p {
 }
 
 
-
+/* Logo de haut page */
 #container-logo {
     position: sticky;
     top: 33vh;
-    width: 100vw; height: 85vh;
+    width: 100vw; height: 95vh;
 }
 #content-textBio {
     position: absolute;
@@ -228,5 +228,9 @@ p {
 
 #imgFourier {
     width: 100%;
+}
+
+#imgKotelnikov {
+    width: 100%
 }
 
