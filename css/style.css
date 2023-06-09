@@ -9,12 +9,19 @@
     --firstColor: #FAFAFA;
 }
 
+html {
+    scroll-behavior: smooth;
+  }  
+
 
 
 
 * {
     margin: 0;
     padding: 0;
+
+    scroll-padding-top: 28%;
+
     font-family: 'Avenir';
     font-style: normal;
 }
@@ -128,7 +135,7 @@ p {
     /*------------------------*/
     width: 120vw; height: 10vh;
     /*------------------------*/
-    z-index: 1;
+    z-index: 2;
 }
 #blurBottom-container {
     position: fixed;
@@ -140,7 +147,7 @@ p {
     /*------------------------*/
     width: 120vw; height: 11.5vh;
     /*------------------------*/
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -184,7 +191,7 @@ p {
     position: fixed;
     bottom: 3.3%; left: 50%;
     width: 92%;
-    z-index: 1;
+    z-index: 2;
     transform: translate(-50%,-50%);
 }
 .progressBar-container {
@@ -202,21 +209,47 @@ p {
 }
 
 
-#btn {
-    z-index: 2;
+/* #btn {
+    z-index: 1;
     position: fixed;
     
-    width: 178px; height: 178px;
-    top: 85vh; left: 85vw;
+    width: 180px; height: 180px;
+    top: 87vh; left: 79vw;
     transform: translate(-50%,-50%);
 
     background: var(--firstColor);
     border-radius: 100px;
 
     transition: .6;
+} */
+#btn {
+    z-index: 1;
+    position: fixed;
+    width: 15%;
+    top: 100vh; left: 77vw;
+
+    border-radius: 1000px;
+    box-shadow: var(--firstColor) 0 0 18px;
+
+    transition: .6s;
 }
-/* .btnActive {
-    top: 87.5vh !important;
+.btn {
+    top: 86vh !important;
+
+    transition: .6s;
+}
+
+/* .btn-arrow-container {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn-arrow-content-left {
+    position: absolute;
+    width: 100px; height: 10px;
+    transform: translate(-50%,-50%) rotate(45deg);
+
+    background: red;
 } */
 
 

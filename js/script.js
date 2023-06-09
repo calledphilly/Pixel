@@ -1,4 +1,4 @@
-// animation sur le texte au centre
+// animation sur le texte au centre & animation sur le bouton qui ramene en haut de la page
 window.addEventListener("scroll", () => {
     let paragraphs = document.querySelectorAll(".scrolling-paragraph");
     let viewportHeight = window.innerHeight/3;
@@ -21,7 +21,7 @@ window.addEventListener("scroll", () => {
     });
 });
 //---------------------------------------------------
-// annimation de la bar de progression
+// animation de la bar de progression
 window.addEventListener('scroll', () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -29,7 +29,11 @@ window.addEventListener('scroll', () => {
     progressBar.style.width = scrolled + "%";
 });
 //---------------------------------------------------
-// faire a apparaitre les images en cours du scroll
+/* faire apparaitre les images au cours du scroll &
+animation sur le bouton qui ramène en haut de la page */
+
+let lastScrollYPercentage = 0; // variable qui stock l'ancienne valeur du scroll
+
 window.addEventListener("scroll", () => {
     //constante qui donne la taille du body
     let heightBody = document.body.offsetHeight ;
@@ -42,7 +46,7 @@ window.addEventListener("scroll", () => {
     On multiplie par 100 pour obtenir une valeyr semblable à des pourcentage, puis on tilise l'opérateur de troncature  « | » (pipe) : En appliquant l'opérateur de troncature « | 0 » à un nombre, la partie décimale est supprimée.  */
     let scrollYPercentage = ( bottomPointOfNavBar / heightBody ) * 100;
     
-    /* ‚ */
+    /* console.log(scrollYPercentage); */
     
     // animaion image de Fourier
     if (scrollYPercentage > 14.7) {
@@ -63,18 +67,21 @@ window.addEventListener("scroll", () => {
     } else {
         imgKirsch.classList.remove('active');
     }
-});
-//---------------------------------------------------
-// animation sur le bouton qui ramene en haut de la page
-let lastScrollY = 0; // variable qui va enregistrer la derniere position de scroll 
 
-window.addEventListener('scroll', () => {
-
-    lastScrollY = window.scrollY ;
-
-    /* if(window.scrollY < lastScrollY) {
-        btn.classList.add('btnActive');
+    // ----------------------------------
+    // ----------------------------------
+    
+    let btn = document.getElementById('btn');
+    
+    if(scrollYPercentage > 5.2) {
+        if (lastScrollYPercentage > scrollYPercentage) {
+            btn.classList.add('btn')
+        } else {
+            btn.classList.remove('btn')
+        }
     } else {
-        btn.classList.remove('btnActive');
-    }; */
+        btn.classList.remove('btn')
+    }
+
+    lastScrollYPercentage = scrollYPercentage ;
 });
