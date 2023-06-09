@@ -1,7 +1,9 @@
-// animation sur le texte au centre & animation sur le bouton qui ramene en haut de la page
+
+// animation sur le texte au centre
+
 window.addEventListener("scroll", () => {
     let paragraphs = document.querySelectorAll(".scrolling-paragraph");
-    let viewportHeight = window.innerHeight/3;
+    let viewportHeight = window.innerHeight/3; // window.innerHeight est la taille de la fenetre
 
     /* "querySelectorAll()" selectionne plusieurs choses en même temps, à l'inverse de "querySelector()"
     qui n'en selectionne qu'un seul.
@@ -20,15 +22,28 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+
+
+
 //---------------------------------------------------
+
+
+
 // animation de la bar de progression
+
 window.addEventListener('scroll', () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     progressBar.style.width = scrolled + "%";
 });
+
+
+
 //---------------------------------------------------
+
+
+
 /* faire apparaitre les images au cours du scroll &
 animation sur le bouton qui ramène en haut de la page */
 
@@ -49,31 +64,51 @@ window.addEventListener("scroll", () => {
     /* console.log(scrollYPercentage); */
     
     // animaion image de Fourier
-    if (scrollYPercentage > 14.7) {
+    if (scrollYPercentage > 14.1) {
         imgFourier.classList.add('active');
     } else {
         imgFourier.classList.remove('active');
     }
+
     // animaion image de Kotelnokov
-    if (scrollYPercentage > 27.5) {
+    if (scrollYPercentage > 25.9) {
         imgKotelnikov.classList.add('active');
     } else {
         imgKotelnikov.classList.remove('active');
     }
     
     // animaion image de Kirsch
-    if (scrollYPercentage > 55.73) {
+    if (scrollYPercentage > 53.1) {
         imgKirsch.classList.add('active');
     } else {
         imgKirsch.classList.remove('active');
     }
 
+    // animaion image de Rodnay
+    if (scrollYPercentage > 87.3) {
+        imgRodnay.classList.add('active');
+    } else {
+        imgRodnay.classList.remove('active');
+    }
+
+    // animaion image de Robert
+    if (scrollYPercentage > 88) {
+        imgRobert.classList.add('active');
+    } else {
+        imgRobert.classList.remove('active');
+    }
+
+
+
     // ----------------------------------
     // ----------------------------------
+
+
+
     // animation du bouton
 
     //appariton a partir de 5.2% de scroll
-    if(scrollYPercentage > 5.2) {
+    if(scrollYPercentage > 5) {
         if (lastScrollYPercentage > scrollYPercentage) {
             // apparition du bouton si on scroll vers le haut
             btn.classList.add('btn')
