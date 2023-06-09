@@ -1,4 +1,4 @@
-// Highlight de texte
+// animation sur le texte au centre
 window.addEventListener("scroll", () => {
     let paragraphs = document.querySelectorAll(".scrolling-paragraph");
     let viewportHeight = window.innerHeight/3;
@@ -21,14 +21,15 @@ window.addEventListener("scroll", () => {
     });
 });
 //---------------------------------------------------
-// progressBar
+// annimation de la bar de progression
 window.addEventListener('scroll', () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     progressBar.style.width = scrolled + "%";
-})
+});
 //---------------------------------------------------
+// faire a apparaitre les images en cours du scroll
 window.addEventListener("scroll", () => {
     //constante qui donne la taille du body
     let heightBody = document.body.offsetHeight ;
@@ -43,21 +44,37 @@ window.addEventListener("scroll", () => {
     
     /* ‚ */
     
-    // affichage image
+    // animaion image de Fourier
     if (scrollYPercentage > 14.7) {
-        imgFourier.classList.add('active')
+        imgFourier.classList.add('active');
     } else {
-        imgFourier.classList.remove('active')
+        imgFourier.classList.remove('active');
     }
-
+    // animaion image de Kotelnokov
     if (scrollYPercentage > 27.5) {
-        imgKotelnikov.classList.add('active')
+        imgKotelnikov.classList.add('active');
     } else {
-        imgKotelnikov.classList.remove('active')
+        imgKotelnikov.classList.remove('active');
     }
+    
+    // animaion image de Kirsch
     if (scrollYPercentage > 55.73) {
-        imgKirsch.classList.add('active')
+        imgKirsch.classList.add('active');
     } else {
-        imgKirsch.classList.remove('active')
+        imgKirsch.classList.remove('active');
     }
-})
+});
+//---------------------------------------------------
+// animation sur le bouton qui ramene en haut de la page
+let lastScrollY = 0; // variable qui va enregistrer la derniere position de scroll 
+
+window.addEventListener('scroll', () => {
+
+    lastScrollY = window.scrollY ;
+
+    if(window.scrollY < lastScrollY) {
+
+    } else {
+        
+    };
+});

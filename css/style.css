@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Avenir';
-    src: url('font/Avenir.ttc') format('truetype');
+    src: url('/font/Avenir.ttc') format('truetype');
     /* Vous pouvez ajouter d'autres formats de police (e.g., woff, woff2) et leurs chemins correspondants ici */
 }
 :root {
@@ -118,7 +118,7 @@ p {
 }
 
 
-#boxOfBlur-top {
+#blurTop-container {
     position: fixed;
     background-color: var(--dark);
     filter: blur(20px);
@@ -130,7 +130,7 @@ p {
     /*------------------------*/
     z-index: 1;
 }
-#boxOfBlur-bottom {
+#blurBottom-container {
     position: fixed;
     background-color: var(--dark);
     filter: blur(20px);
@@ -187,21 +187,21 @@ p {
 */
 
  /* progressBar */
-.boxof-progress-bar {
+.containerOf-progressBar {
     position: fixed;
     bottom: 3.3%; left: 50%;
     width: 92%;
     z-index: 1;
     transform: translate(-50%,-50%);
 }
-.progress-bar-container {
+.progressBar-container {
     width: 100%; height: 1vh;
     /* ---------------------------- */
     background: var(--dark); /* couleur de la bar avant la progression */
     border-radius: 100px;
     border: 2px solid var(--firstColor);
 }
-.progress-bar-content {
+.progressBar-content {
     width: 0%; height: 1vh;
     /* ---------------------------- */
     background: var(--firstColor); /* couleur de la pendant progression */
@@ -211,8 +211,15 @@ p {
 
 
 /* image cachéz */
-.img {
+.imgLeft {
     transform: translateX(-110%);
+    transition: .9s;
+    opacity: 0;
+    border-radius: 80px;
+    margin: 15% 0;
+}
+.imgRight {
+    transform: translateX(110%);
     transition: .9s;
     opacity: 0;
     border-radius: 80px;
@@ -220,7 +227,12 @@ p {
 }
 
 /* image affichée */
-.img.active {
+.imgLeft.active {
+    transform: translateX(0);
+    transition: .9s;
+    opacity: 1;
+}
+.imgRight.active { 
     transform: translateX(0);
     transition: .9s;
     opacity: 1;
