@@ -70,16 +70,22 @@ window.addEventListener("scroll", () => {
 
     // ----------------------------------
     // ----------------------------------
-    
+    // animation du bouton
+
+    //appariton a partir de 5.2% de scroll
     if(scrollYPercentage > 5.2) {
         if (lastScrollYPercentage > scrollYPercentage) {
+            // apparition du bouton si on scroll vers le haut
             btn.classList.add('btn')
         } else {
+            // disparition sinon
             btn.classList.remove('btn')
         }
-    } else {
+    }// disparition si le scroll est inferieur a 5.2%
+    else {
         btn.classList.remove('btn')
     }
 
+    // enregistrement de l'ancienne valeur du scroll
     lastScrollYPercentage = scrollYPercentage ;
 });
