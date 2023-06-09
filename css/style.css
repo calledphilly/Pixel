@@ -82,11 +82,11 @@ p {
 
 
 /* Logo de haut page */
-#container-logo {
+#logo-container {
     position: sticky;
     top: 33vh;
     width: 100vw; height: 95vh;
-}
+}/* 
 #content-textBio {
     position: absolute;
     top: 20vh; left: 40vw;
@@ -122,7 +122,7 @@ p {
     top: 20vh; left: 40vw;
     width: 150%;
     transform: translate(-50%,-50%);
-}
+} */
 
 
 #blurTop-container {
