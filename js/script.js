@@ -71,8 +71,6 @@ window.addEventListener("scroll", () => {
     // ----------------------------------
     // ----------------------------------
     
-    let btn = document.getElementById('btn');
-    
     if(scrollYPercentage > 5.2) {
         if (lastScrollYPercentage > scrollYPercentage) {
             btn.classList.add('btn')

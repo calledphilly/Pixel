@@ -231,12 +231,10 @@ p {
     border-radius: 1000px;
     box-shadow: var(--firstColor) 0 0 18px;
 
-    transition: .6s;
+    transition: 1s;
 }
 .btn {
     top: 86vh !important;
-
-    transition: .6s;
 }
 
 /* .btn-arrow-container {
