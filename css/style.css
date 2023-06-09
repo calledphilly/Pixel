@@ -144,13 +144,6 @@ p {
 }
 
 
-
-#scrolly-video {
-    width: 100%;
-}
-
-
-
 /* 
 #progress-bar {
     position: fixed;
@@ -209,8 +202,31 @@ p {
 }
 
 
+#btn {
+    z-index: 2;
+    position: fixed;
+    
+    width: 178px; height: 178px;
+    top: 85vh; left: 85vw;
+    transform: translate(-50%,-50%);
 
-/* image cachéz */
+    background: var(--firstColor);
+    border-radius: 100px;
+
+    transition: .6;
+}
+/* .btnActive {
+    top: 87.5vh !important;
+} */
+
+
+/* #scrolly-video {
+    width: 100%;
+} */
+
+
+
+/* image cachée */
 .imgLeft {
     transform: translateX(-110%);
     transition: .9s;

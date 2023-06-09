@@ -72,9 +72,9 @@ window.addEventListener('scroll', () => {
 
     lastScrollY = window.scrollY ;
 
-    if(window.scrollY < lastScrollY) {
-
+    /* if(window.scrollY < lastScrollY) {
+        btn.classList.add('btnActive');
     } else {
-        
-    };
+        btn.classList.remove('btnActive');
+    }; */
 });
