@@ -39,9 +39,9 @@ window.addEventListener("scroll", () => {
     
     /*variable qui donne le pourcentage de scroll (verticale) de la page.
     On multiplie par 100 pour obtenir une valeyr semblable à des pourcentage, puis on tilise l'opérateur de troncature  « | » (pipe) : En appliquant l'opérateur de troncature « | 0 » à un nombre, la partie décimale est supprimée.  */
-    let scrollYPercentage = ( bottomPointOfNavBar / heightBody ) * 100 | 0;
+    let scrollYPercentage = ( bottomPointOfNavBar / heightBody ) * 100;
     
-    console.log(scrollYPercentage);
+    /* ‚ */
     
     // affichage image
     if (scrollYPercentage > 15) {
@@ -50,9 +50,14 @@ window.addEventListener("scroll", () => {
         imgFourier.classList.remove('active')
     }
 
-    if (scrollYPercentage > 28) {
+    if (scrollYPercentage > 28.3) {
         imgKotelnikov.classList.add('active')
     } else {
         imgKotelnikov.classList.remove('active')
+    }
+    if (scrollYPercentage > 57.7) {
+        imgKirsch.classList.add('active')
+    } else {
+        imgKirsch.classList.remove('active')
     }
 })
