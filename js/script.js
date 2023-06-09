@@ -44,18 +44,18 @@ window.addEventListener("scroll", () => {
     /* ‚ */
     
     // affichage image
-    if (scrollYPercentage > 15) {
+    if (scrollYPercentage > 14.7) {
         imgFourier.classList.add('active')
     } else {
         imgFourier.classList.remove('active')
     }
 
-    if (scrollYPercentage > 28.3) {
+    if (scrollYPercentage > 27.5) {
         imgKotelnikov.classList.add('active')
     } else {
         imgKotelnikov.classList.remove('active')
     }
-    if (scrollYPercentage > 57.7) {
+    if (scrollYPercentage > 55.73) {
         imgKirsch.classList.add('active')
     } else {
         imgKirsch.classList.remove('active')
