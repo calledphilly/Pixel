@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 15%;
   }  
 
 
@@ -20,13 +21,12 @@ html {
     margin: 0;
     padding: 0;
 
-    scroll-padding-top: 28%;
-
     font-family: 'Avenir';
     font-style: normal;
 }
 
 body {
+    width: 100vw;
     background-color: var(--dark);
 }
 main {
@@ -43,6 +43,8 @@ h1 {
     margin-top: 40%;
     margin-bottom: 19%;
     margin-left: -1.2%;
+
+    color: var(--firstColor);
 }
 .h1 {
     font-size: .48em;
@@ -81,50 +83,6 @@ p {
 }
 
 
-/* Logo de haut page */
-#logo-container {
-    position: sticky;
-    top: 33vh;
-    width: 100vw; height: 95vh;
-}/* 
-#content-textBio {
-    position: absolute;
-    top: 20vh; left: 40vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-}
-#content-fluid {
-    position: absolute;
-    top: 13vh; left: 50vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-}
-#content-cone {
-    position: absolute;
-    top: 20vh; left: 40vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-}
-#content-lettres {
-    position: absolute;
-    top: 20vh; left: 40vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-}
-#content-textByAlvain {
-    position: absolute;
-    top: 20vh; left: 40vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-}
-#content-icosphere {
-    position: absolute;
-    top: 20vh; left: 40vw;
-    width: 150%;
-    transform: translate(-50%,-50%);
-} */
-
-
 #blurTop-container {
     position: fixed;
     background-color: var(--dark);
@@ -150,6 +108,60 @@ p {
     z-index: 2;
 }
 
+
+.nav-container {
+    z-index: 3;
+    position: fixed;
+    top: -100vh; left: 50vw;
+    width: 110vw; height: 105vh;
+    transform: translateX(-50%);
+
+    background-color: var(--secondColor);
+    transition: .6s;
+}
+.nav-container.active {
+    top: 0;
+    background-color: var(--dark);
+}
+.nav-bar {
+    position: absolute;
+    width: 38%; height: 1%;
+    bottom: 2%; left: 50%;
+    transform: translateX(-50%);
+
+    background: white;
+    border-radius: 1000px;
+}
+.nav-content {
+    margin-top: -15%;
+    position: fixed;
+    width: 76%; height: 70%;
+    top: 16%; left: 50%;
+    transform: translateX(-50%);
+}
+.nav-groupe {
+    margin-top: 20%;
+}
+.nav-groupe > a {
+    text-decoration: none;
+    display: block;
+}
+.nav-heading1 {
+    font-size: 5em;
+    font-weight: 800;
+    margin-bottom: 8%;
+
+    color: var(--firstColor);
+
+}
+.nav-heading2 {
+    font-size: 3em;
+    font-weight: 50;
+    margin-bottom: 3%;
+
+    color: var(--firstColor);
+
+}
 
 /* 
 #progress-bar {
@@ -226,7 +238,9 @@ p {
     z-index: 1;
     position: fixed;
     width: 15%;
-    top: 100vh; left: 77vw;
+    /* top: 100vh; left: 77vw; */
+    top: 105vh; left: 84.9vw;
+    transform: translate(-50%,-50%);
 
     border-radius: 1000px;
     box-shadow: var(--firstColor) 0 0 18px;
@@ -234,7 +248,7 @@ p {
     transition: 1s;
 }
 .btn {
-    top: 86vh !important;
+    top: 89.7vh !important;
 }
 
 /* .btn-arrow-container {
@@ -254,6 +268,52 @@ p {
 /* #scrolly-video {
     width: 100%;
 } */
+
+
+/* Logo de haut page */
+#logo-container {
+    position: sticky;
+    top: 33vh;
+    width: 100vw; height: 95vh;
+}/* 
+#content-textBio {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-fluid {
+    position: absolute;
+    top: 13vh; left: 50vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-cone {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-lettres {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-textByAlvain {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+}
+#content-icosphere {
+    position: absolute;
+    top: 20vh; left: 40vw;
+    width: 150%;
+    transform: translate(-50%,-50%);
+} */
+
+
 
 
 

@@ -69,7 +69,7 @@ window.addEventListener("scroll", () => {
     } else {
         imgFourier.classList.remove('active');
     }
-
+    
     // animaion image de Kotelnokov
     if (scrollYPercentage > 25.9) {
         imgKotelnikov.classList.add('active');
@@ -83,30 +83,30 @@ window.addEventListener("scroll", () => {
     } else {
         imgKirsch.classList.remove('active');
     }
-
+    
     // animaion image de Rodnay
     if (scrollYPercentage > 87.3) {
         imgRodnay.classList.add('active');
     } else {
         imgRodnay.classList.remove('active');
     }
-
+    
     // animaion image de Robert
     if (scrollYPercentage > 88) {
         imgRobert.classList.add('active');
     } else {
         imgRobert.classList.remove('active');
     }
-
-
-
+    
+    
+    
     // ----------------------------------
     // ----------------------------------
-
-
-
-    // animation du bouton
-
+    
+    
+    
+    // animation de l'apparition et de la djsparition du bouton
+    
     //appariton a partir de 5.2% de scroll
     if(scrollYPercentage > 5) {
         if (lastScrollYPercentage > scrollYPercentage) {
@@ -120,7 +120,19 @@ window.addEventListener("scroll", () => {
     else {
         btn.classList.remove('btn')
     }
-
+    
     // enregistrement de l'ancienne valeur du scroll
     lastScrollYPercentage = scrollYPercentage ;
+});
+
+
+
+//---------------------------------------------------
+
+
+
+// animation scrollBar
+
+scrollBar.addEventListener('click', () => {
+    scrollBar.classList.toggle('active')
 });
