@@ -28,27 +28,27 @@
     <div id="blurBottom-container"></div>
     <!-- ---------------------------------- -->
     <!-- Sommaire -->
-    <div id='scrollBar' class="nav-container">
-        <div class="nav-content">
-            <div class="nav-groupe">
-                <a href="#--histoire" class="nav-heading1">Histoire</a>
+    <div id='scrollBar' class="scrollBar-container">
+        <div class="scrollBar-content">
+            <div class="scrollBar-groupe">
+                <a href="#--histoire" class="scrollBar-heading1">Histoire</a>
 
-                <a href="#--lePixel" class="nav-heading2">Le Pixel</a>
-                <a href="#--laSerieDeFourier" class="nav-heading2">La Série de fourier</a>
-                <a href="#--leTheoremeDeKotelnikov" class="nav-heading2">Le Théorème de Kotelnikov</a>
+                <a href="#--lePixel" class="scrollBar-heading2">Le Pixel</a>
+                <a href="#--laSerieDeFourier" class="scrollBar-heading2">La Série de fourier</a>
+                <a href="#--leTheoremeDeKotelnikov" class="scrollBar-heading2">Le Théorème de Kotelnikov</a>
             </div>
-            <div class="nav-groupe">
-                <a href="#--lOmnipresenceDuPixel" class="nav-heading1">L’Omniprésence<br>
+            <div class="scrollBar-groupe">
+                <a href="#--lOmnipresenceDuPixel" class="scrollBar-heading1">L’Omniprésence<br>
                     du Pixel</a>
 
-                <a href="#--deconstructionDeLimaginaireCollectif" class="nav-heading2">Déconstruction de<br>
+                <a href="#--deconstructionDeLimaginaireCollectif" class="scrollBar-heading2">Déconstruction de<br>
                     l'Imaginaire Collectif</a>
-                <a href="#--laLoiDeMoore" class="nav-heading2">La Loi de Moore</a>
-                <a href="#--pixelApplication" class="nav-heading2">Pixel application</a>
+                <a href="#--laLoiDeMoore" class="scrollBar-heading2">La Loi de Moore</a>
+                <a href="#--pixelApplication" class="scrollBar-heading2">Pixel application</a>
             </div>
         </div>
 
-        <div class="nav-bar"></div>
+        <div id="scrollBar-line"></div>
     </div>
     <!-- ---------------------------------- -->
     <!-- progressBar -->
@@ -87,7 +87,7 @@
             <img id="content-icosphere" src="/img/PIXEL 3D LOGO (4K)/PIXEL 3D LOGO 4K PRISM (ICOSPHERE).png" alt=""> -->
         </div>
 
-        <h1 id="--histoire">
+        <h1 id="--histoire" class="scrolling-paragraph">
             Histoire
         </h1>
 
@@ -181,7 +181,7 @@
         </p>
 
 
-        <video autoplay loop style="
+        <video autoplay playsinline loop style="
         margin: 40% 0;
         width: 105vw;
         transform: translateX(-9%);"
@@ -205,7 +205,7 @@
         </p>
 
 
-        <video loop autoplay style="
+        <video loop autoplay playsinline style="
         margin: 30% 0;
         width: 105vw;
         transform: translateX(-9%);"
@@ -245,7 +245,7 @@
         </p>
 
 
-        <video loop autoplay style="
+        <video loop autoplay playsinline style="
         margin: 30% 0;
         width: 113.7vw;
         transform: translateX(-12.7%);"
@@ -263,7 +263,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-9%);
+        "
+        src="/img/Ondes Illustrator/ondes.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -283,7 +288,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-9%);
+        "
+        src="/img/Ondes Illustrator/ondes+echantillons.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -297,7 +307,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-9%);
+        "
+        src="/img/Ondes Illustrator/echantillons.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -332,7 +347,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-27.5%);
+        "
+        src="/img/Ondes Illustrator/epandeur1.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -354,7 +374,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-27.5%);
+        "
+        src="/img/Ondes Illustrator/epandeur2.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -363,7 +388,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-9%);
+        "
+        src="/img/Ondes Illustrator/echantillons+epandeur.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -371,7 +401,12 @@
         </p>
 
 
-        <img src="" alt="">
+        <img style="
+        width: 220%;
+        margin: 26% 0;
+        transform: translateX(-9%);
+        "
+        src="/img/Ondes Illustrator/echantillons+epandeur+ondes.svg" alt="">
 
 
         <p class="scrolling-paragraph">
@@ -576,7 +611,7 @@
         </p>
 
 
-        <video loop autoplay style="
+        <video loop autoplay playsinline style="
         margin: 30% 0;
         width: 113.7vw; 
         transform: translateX(-12.7%);"
@@ -651,7 +686,7 @@
         </p>
 
 
-        <video loop autoplay style="
+        <video loop autoplay playsinline style="
         margin: 30% 0; 
         width: 134vw; 
         transform: translateX(-17%);"
@@ -676,7 +711,7 @@
         </p>
 
 
-        <video loop autoplay style="
+        <video loop autoplay playsinline style="
         margin: 30% 0; 
         width: 172vw; 
         transform: translateX(-24.45%);"
