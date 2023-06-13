@@ -64,35 +64,35 @@ window.addEventListener("scroll", () => {
     /* console.log(scrollYPercentage); */
     
     // animaion image de Fourier
-    if (scrollYPercentage > 14.1) {
+    if (scrollYPercentage > /* 14.1 */13) {
         imgFourier.classList.add('active');
     } else {
         imgFourier.classList.remove('active');
     }
     
     // animaion image de Kotelnokov
-    if (scrollYPercentage > 25.9) {
+    if (scrollYPercentage > /* 25.9 */24.2) {
         imgKotelnikov.classList.add('active');
     } else {
         imgKotelnikov.classList.remove('active');
     }
     
     // animaion image de Kirsch
-    if (scrollYPercentage > 53.1) {
+    if (scrollYPercentage > 56.3) {
         imgKirsch.classList.add('active');
     } else {
         imgKirsch.classList.remove('active');
     }
     
     // animaion image de Rodnay
-    if (scrollYPercentage > 87.3) {
+    if (scrollYPercentage > 88.3) {
         imgRodnay.classList.add('active');
     } else {
         imgRodnay.classList.remove('active');
     }
     
     // animaion image de Robert
-    if (scrollYPercentage > 88) {
+    if (scrollYPercentage > 89) {
         imgRobert.classList.add('active');
     } else {
         imgRobert.classList.remove('active');
