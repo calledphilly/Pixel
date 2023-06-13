@@ -30,6 +30,7 @@ body {
     background-color: var(--dark);
 }
 main {
+    z-index: 1;
     margin: -10% auto 120% auto;
     padding: 0 10%;
     width: 85%;
